@@ -130,18 +130,6 @@ ExData_Plotting1 <- function()
         frame
     }
     
-    plot <- function()
-    {
-        # plot 1
-        #
-        hist(frame$activePower, col = 'red', main = 'Global Active Power',xlab = 'Global Active Power (kilowatts)', ylab = 'Frequency')
-        
-        # plot 2
-        #
-        with(frame, plot(dateTime, activePower, pch = 19))
-        
-    }
-    
     getFrame <- function()
     {
         dataFrame
