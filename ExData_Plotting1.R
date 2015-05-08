@@ -7,14 +7,10 @@ ExData_Plotting1 <- function()
     dataRows     <- 0
     dataFrame    <- 0
     
-    
-    
     filePath <- function(...) 
     { 
         paste(..., sep = "/") 
     }
-    
-    
     
     download <- function()
     {
@@ -52,8 +48,6 @@ ExData_Plotting1 <- function()
         }
     }
     
-    
-    
     prepare <- function()
     {
         # read only o little bit of data from file to getting information
@@ -79,8 +73,6 @@ ExData_Plotting1 <- function()
         result    <- system(command = command, intern = TRUE)
         dataRows <<- as.numeric(strsplit(result, c(" "))[[1]][1])
     }
-    
-    
     
     load <- function()
     {
@@ -126,8 +118,6 @@ ExData_Plotting1 <- function()
         close(con)
     }
     
-    
-    
     process <- function()
     {
         auxDF <- data.frame(datetime = strptime(paste(dataFrame$date, dataFrame$time), "%d/%m/%Y %H:%M:%S"))
@@ -140,8 +130,6 @@ ExData_Plotting1 <- function()
         frame
     }
     
-    
-    
     plot <- function()
     {
         # plot 1
@@ -153,8 +141,6 @@ ExData_Plotting1 <- function()
         with(frame, plot(dateTime, activePower, pch = 19))
         
     }
-    
-    
     
     getFrame <- function()
     {
@@ -173,7 +159,7 @@ ExData_Plotting1 <- function()
 
 
 
-setwd('C:/Users/Rinaldo/Downloads/The Data Science Specialization/04 - Exploratory Data Analysis/wd')
+#setwd('C:/Users/Rinaldo/Downloads/The Data Science Specialization/04 - Exploratory Data Analysis/wd')
 
-frame <- ExData_Plotting1()
+#frame <- ExData_Plotting1()
 
