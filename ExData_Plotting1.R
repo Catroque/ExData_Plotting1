@@ -135,19 +135,11 @@ ExData_Plotting1 <- function()
         dataFrame
     }
     
-    
-    
+	# execution of procedures 
+	#
     download()
     prepare()
     load()
     frame <- process()
     frame
 }
-
-
-
-
-#setwd('C:/Users/Rinaldo/Downloads/The Data Science Specialization/04 - Exploratory Data Analysis/wd')
-
-#frame <- ExData_Plotting1()
-

@@ -3,9 +3,7 @@ source('./ExData_Plotting1.R')
 frame <- ExData_Plotting1()
 
 png(filename='plot4.png', width = 480, height = 480)
-
 par(mfrow = c(2,2))
-
 
 # plot 1
 #
@@ -18,7 +16,6 @@ with(frame, plot(datetime,
 
 with(frame, lines(datetime, activePower))
 
-
 # plot 2
 #
 with(frame, plot(datetime, 
@@ -29,7 +26,6 @@ with(frame, plot(datetime,
                  type = 'n'))
 
 with(frame, lines(datetime, voltage))
-
 
 # plot 3
 #
@@ -49,7 +45,6 @@ legend('topright',
        lty = c(1,1),
        col = c('black', 'red', 'blue'),
        bty = 'n')
-
 
 # plot 4
 #
